@@ -10,10 +10,20 @@
    "keywords":    ["jsdom", "nodejs", "localhost", "url", "testing", "javascript", "mocha"],
    "author":      { "name": "dna.js", "url": "http://dnajs.org" },
    "scripts": {
-      "test": "mocha spec.js"
+      "pretest": "jshint spec.js",
+      "test":    "mocha spec.js"
+   },
+   "jshintConfig": {
+      "esversion": 6,
+      "strict":    "implied",
+      "node":      true,
+      "mocha":     true,
+      "undef":     true,
+      "unused":    true
    },
    "devDependencies": {
-      "mocha": "~3.4",
-      "jsdom": "~11.0"
+      "mocha":  "~3.4",
+      "jsdom":  "~11.0",
+      "jshint": "~2.9"
    }
 }
