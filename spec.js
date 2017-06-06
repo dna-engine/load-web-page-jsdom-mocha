@@ -1,11 +1,10 @@
 // Jasmine Specification Cases
 
-var url  = 'http://dnajs.org/';
-
-var assert = require('assert');
+const assert =    require('assert');
 const { JSDOM } = require('jsdom');
 
-var window, $;
+const url  = 'http://dnajs.org/';
+let window, $;
 function loadWebPage(done) {
    function handleWebPage(dom) {
       function waitForScripts() {
@@ -31,12 +30,12 @@ describe('The web page', () => {
       });
 
    it('has exactly one header, main, and footer', () => {
-      var actual =   {
+      const actual =   {
           header: $('body >header').length,
           main:   $('body >main').length,
           footer: $('body >footer').length
           };
-      var expected = { header: 1, main: 1, footer: 1 };
+      const expected = { header: 1, main: 1, footer: 1 };
       assert.deepEqual(actual, expected);
       });
 
