@@ -3,19 +3,20 @@
 var url  = 'http://dnajs.org/';
 
 var assert = require('assert');
-var jsdom =  require('jsdom');
+const { JSDOM } = require('jsdom');
+
 var window, $;
 function loadWebPage(done) {
-   function handleWebPage(error, win) {
-     window = win;    //make "window" object available to test cases
-     $ = win.jQuery;  //make jQuery available to use in test cases
-     done();
-     }
-   var features = {  //tell jsdom to load and run JavaScript files
-      FetchExternalResources:   ['script'],
-      ProcessExternalResources: ['script']
-      };
-   jsdom.env({ url: url, features: features, done: handleWebPage });
+   function handleWebPage(dom) {
+      function waitForScripts() {
+         window = dom.window;
+         $ = dom.window.jQuery;
+         done();
+         }
+      dom.window.onload = waitForScripts;
+      }
+   const options = { resources: 'usable', runScripts: 'dangerously' };
+   JSDOM.fromURL(url, options).then(handleWebPage);
    }
 function closeWebPage() { window.close(); }
 
