@@ -1,4 +1,4 @@
-// Jasmine Specification Cases
+// Mocha Specification Cases
 
 const assert =    require('assert');
 const { JSDOM } = require('jsdom');
