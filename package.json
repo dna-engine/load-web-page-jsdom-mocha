@@ -22,8 +22,8 @@
       "unused":    true
    },
    "devDependencies": {
-      "mocha":  "~3.4",
-      "jsdom":  "~11.0",
+      "mocha":  "~3.5",
+      "jsdom":  "~11.2",
       "jshint": "~2.9"
    }
 }
