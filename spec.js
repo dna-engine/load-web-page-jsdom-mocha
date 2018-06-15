@@ -3,7 +3,8 @@
 const assert =    require('assert');
 const { JSDOM } = require('jsdom');
 
-const url  = 'http://dnajs.org/';
+const url  = 'http://dragonsgrill.org/';
+//const url  = 'http://dnajs.org/';  //Error: Uncaught [TypeError: Cannot read property 'responseStart' of undefined]
 let window, $;
 function loadWebPage(done) {
    function handleWebPage(dom) {
@@ -25,7 +26,7 @@ describe('The web page', () => {
    before(loadWebPage);
    after(closeWebPage);
 
-   it('has the correct URL', () => {
+   it('has the correct URL -> ' + url, () => {
       assert.equal(window.location.href, url);
       });
 
