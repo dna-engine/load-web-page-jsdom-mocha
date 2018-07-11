@@ -3,8 +3,8 @@
 const assert =    require('assert');
 const { JSDOM } = require('jsdom');
 
-const url  = 'http://dragonsgrill.org/';
-//const url  = 'http://dnajs.org/';  //Error: Uncaught [TypeError: Cannot read property 'responseStart' of undefined]
+const url  = 'https://dragonsgrill.org/';
+//const url  = 'https://dnajs.org/';  //Error: Uncaught [TypeError: Cannot read property 'responseStart' of undefined]
 let window, $;
 function loadWebPage(done) {
    function handleWebPage(dom) {
