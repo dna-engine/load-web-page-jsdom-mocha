@@ -1,7 +1,7 @@
 # load-web-page-jsdom-mocha
-<img src=https://raw.githubusercontent.com/dnajs/dna.js/master/website/static/graphics/dnajs-logo.png
-   align=right width=160 alt=logo>
-*Minimal example of loading a web page into jsdom and testing with Mocha*
+<img src=https://dnajs.org/graphics/dnajs-logo.png align=right width=160 alt=logo>
+
+_Minimal example of loading a web page into jsdom and testing with Mocha_
 
 [![Build Status](https://travis-ci.org/dnajs/load-web-page-jsdom-mocha.svg)](https://travis-ci.org/dnajs/load-web-page-jsdom-mocha)
 
