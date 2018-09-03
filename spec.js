@@ -1,8 +1,10 @@
 // Mocha Specification Cases
 
-const assert =    require('assert');
+// Imports
+const assert =    require('assert').strict;
 const { JSDOM } = require('jsdom');
 
+// Setup
 const url  = 'https://dragonsgrill.org/';
 //const url  = 'https://dnajs.org/';  //Error: Uncaught [TypeError: Cannot read property 'responseStart' of undefined]
 let window, $;
@@ -27,7 +29,9 @@ describe('The web page', () => {
    after(closeWebPage);
 
    it('has the correct URL -> ' + url, () => {
-      assert.equal(window.location.href, url);
+      const actual =   { url: window.location.href };
+      const expected = { url: url };
+      assert.deepEqual(actual, expected);
       });
 
    it('has exactly one header, main, and footer', () => {
