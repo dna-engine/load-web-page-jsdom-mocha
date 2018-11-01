@@ -3,7 +3,7 @@
 
 _Minimal example of loading a web page into jsdom and testing with Mocha_
 
-[![Build Status](https://travis-ci.org/dnajs/load-web-page-jsdom-mocha.svg)](https://travis-ci.org/dnajs/load-web-page-jsdom-mocha)
+[![Build](https://travis-ci.org/dnajs/load-web-page-jsdom-mocha.svg)](https://travis-ci.org/dnajs/load-web-page-jsdom-mocha)
 
 ### Instructions
 Execute `spec-runner.sh.command` or enter the terminal commands:
