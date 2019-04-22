@@ -19,8 +19,9 @@
       "mocha"
    ],
    "jshintConfig": {
-      "esversion": 6,
+      "esversion": 9,
       "strict": "implied",
+      "eqeqeq": true,
       "undef": true,
       "unused": true,
       "node": true,
@@ -31,9 +32,9 @@
       "test": "mocha spec.js"
    },
    "devDependencies": {
-      "jsdom": "~13.2",
+      "jsdom": "~15.0",
       "jshint": "~2.10",
-      "mocha": "~6.0",
+      "mocha": "~6.1",
       "request": "~2.88"
    }
 }
