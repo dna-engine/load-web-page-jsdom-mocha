@@ -25,16 +25,20 @@
       "undef": true,
       "unused": true,
       "node": true,
-      "mocha": true
+      "mocha": true,
+      "browser": true,
+      "jquery": true
    },
    "scripts": {
-      "pretest": "jshint spec.js",
-      "test": "mocha spec.js"
+      "pretest": "jshint *.js",
+      "test": "mocha spec*.js"
    },
    "devDependencies": {
-      "jsdom": "~15.0",
+      "canvas": "~2.6",
+      "jsdom": "~15.2",
       "jshint": "~2.10",
-      "mocha": "~6.1",
-      "request": "~2.88"
-   }
+      "mocha": "~7.0",
+      "server-listening": "~0.1"
+   },
+   "dependencies": {}
 }
