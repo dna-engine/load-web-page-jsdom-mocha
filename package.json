@@ -10,13 +10,13 @@
    "docs": "https://github.com/dnajs/load-web-page-jsdom-mocha#readme",
    "author": "Center Key (https://centerkey.com)",
    "keywords": [
-      "jsdom",
-      "nodejs",
-      "localhost",
-      "url",
-      "testing",
       "javascript",
-      "mocha"
+      "jsdom",
+      "localhost",
+      "mocha",
+      "nodejs",
+      "testing",
+      "url"
    ],
    "jshintConfig": {
       "esversion": 9,
@@ -33,12 +33,12 @@
       "pretest": "jshint *.js",
       "test": "mocha spec*.js"
    },
+   "dependencies": {},
    "devDependencies": {
       "canvas": "~2.6",
       "jsdom": "~16.4",
       "jshint": "~2.12",
       "mocha": "~8.2",
       "server-listening": "~0.1"
-   },
-   "dependencies": {}
+   }
 }
