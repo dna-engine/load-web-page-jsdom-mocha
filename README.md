@@ -21,8 +21,8 @@ For development testing, set the `url` variable in **spec.js** to your local web
    width=400 alt=screenshot>
 
 ### Comparison
-For a Jasmine version, check out:<br>
-[load-web-page-jsdom-jasmine](https://github.com/dnajs/load-web-page-jsdom-jasmine) (and on [SO](https://stackoverflow.com/a/43221707))
+For a Puppeteer version, check out:<br>
+[load-web-page-puppeteer-mocha](https://github.com/dnajs/load-web-page-puppeteer-mocha)
 
 ---
 [dnajs.org](https://dnajs.org) | [MIT License](LICENSE.txt)

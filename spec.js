@@ -1,9 +1,9 @@
 // Mocha Specification Cases
 
 // Imports
-const assert =          require('assert');
-const serverListening = require('server-listening');
-const { JSDOM } =       require('jsdom');
+const assert =              require('assert');
+const { serverListening } = require('server-listening');
+const { JSDOM } =           require('jsdom');
 
 // Setup
 const url = 'https://pretty-print-json.js.org/';
@@ -11,7 +11,7 @@ const jsdomOptions = { resources: 'usable', runScripts: 'dangerously' };
 let dom;
 const loadWebPage = () => JSDOM.fromURL(url, jsdomOptions)
    .then(serverListening.jsdomOnLoad)
-   .then((jsdom) => dom = jsdom);
+   .then(jsdom => dom = jsdom);
 const closeWebPage = () => serverListening.jsdomCloseWindow(dom);
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
