@@ -3,7 +3,8 @@
    "description": "Minimal example of loading a web page into jsdom and testing with mocha",
    "version": "1.0.0",
    "license": "MIT",
-   "main": "spec.js",
+   "type": "module",
+   "module": "spec.js",
    "repository": "github:dnajs/load-web-page-jsdom-mocha",
    "homepage": "https://github.com/dnajs/load-web-page-jsdom-mocha",
    "bugs": "https://github.com/dnajs/load-web-page-jsdom-mocha/issues",
@@ -38,7 +39,7 @@
       "canvas": "~2.6",
       "jsdom": "~16.4",
       "jshint": "~2.12",
-      "mocha": "~8.2",
+      "mocha": "~8.3",
       "server-listening": "~0.2"
    }
 }

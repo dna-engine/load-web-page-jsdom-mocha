@@ -1,9 +1,9 @@
 // Mocha Specification Cases
 
 // Imports
-const assert =              require('assert');
-const { serverListening } = require('server-listening');
-const { JSDOM } =           require('jsdom');
+import assert from 'assert';
+import { serverListening } from 'server-listening';
+import { JSDOM } from 'jsdom';
 
 // Setup
 const url = 'https://pretty-print-json.js.org/';
