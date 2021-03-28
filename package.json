@@ -36,8 +36,8 @@
    },
    "dependencies": {},
    "devDependencies": {
-      "canvas": "~2.6",
-      "jsdom": "~16.4",
+      "canvas": "~2.7",
+      "jsdom": "~16.5",
       "jshint": "~2.12",
       "mocha": "~8.3",
       "server-listening": "~0.2"
