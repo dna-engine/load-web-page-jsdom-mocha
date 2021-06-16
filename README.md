@@ -3,7 +3,7 @@
 
 _Minimal example of loading a web page into jsdom and testing with Mocha_
 
-[![Build](https://travis-ci.com/dnajs/load-web-page-jsdom-mocha.svg)](https://travis-ci.com/dnajs/load-web-page-jsdom-mocha)
+[![Build](https://github.com/dnajs/load-web-page-jsdom-mocha/workflows/build/badge.svg)](https://github.com/dnajs/load-web-page-jsdom-mocha/actions?query=workflow%3Abuild)
 
 ### Instructions
 Execute `spec-runner.sh.command` or enter the terminal commands:
@@ -17,7 +17,7 @@ $ npm test  #runs "mocha spec.js"
 For development testing, set the `url` variable in **spec.js** to your local web server, such as:
 `http://localhost:8080`
 
-<img src=https://raw.githubusercontent.com/dnajs/load-web-page-jsdom-mocha/master/screenshot.png
+<img src=https://raw.githubusercontent.com/dnajs/load-web-page-jsdom-mocha/main/screenshot.png
    width=400 alt=screenshot>
 
 ### Comparison
