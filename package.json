@@ -36,6 +36,7 @@
    },
    "dependencies": {},
    "devDependencies": {
+      "assert-deep-strict-equal": "~0.0",
       "canvas": "~2.8",
       "jsdom": "~16.6",
       "jshint": "~2.13",
