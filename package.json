@@ -31,13 +31,13 @@
       "jquery": true
    },
    "scripts": {
-      "pretest": "jshint . --exclude node_modules",
+      "pretest": "jshint . --exclude-path .gitignore",
       "test": "mocha spec*.js --timeout 5000"
    },
    "dependencies": {},
    "devDependencies": {
       "assert-deep-strict-equal": "~1.0",
-      "canvas": "~2.9",
+      "canvas": "~2.10",
       "jsdom": "~20.0",
       "jshint": "~2.13",
       "mocha": "~10.0",
