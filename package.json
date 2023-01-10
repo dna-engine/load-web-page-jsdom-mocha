@@ -36,9 +36,9 @@
    },
    "devDependencies": {
       "assert-deep-strict-equal": "~1.0",
-      "jsdom": "~20.0",
+      "jsdom": "~21.0",
       "jshint": "~2.13",
-      "mocha": "~10.1",
+      "mocha": "~10.2",
       "server-listening": "~1.0"
    }
 }
