@@ -6,7 +6,7 @@ import { serverListening } from 'server-listening';
 import { JSDOM } from 'jsdom';
 
 // Setup
-const url = 'https://pretty-print-json.js.org/';
+const url =          'https://pretty-print-json.js.org/';
 const jsdomOptions = { resources: 'usable', runScripts: 'dangerously' };
 let dom;
 const loadWebPage = () => JSDOM.fromURL(url, jsdomOptions)
@@ -16,6 +16,7 @@ const closeWebPage = () => serverListening.jsdomCloseWindow(dom);
 
 ////////////////////////////////////////////////////////////////////////////////
 describe('The web page', () => {
+   const getTags = (elems) => [...elems].map(elem => elem.nodeName.toLowerCase());
    before(loadWebPage);
    after(closeWebPage);
 
@@ -25,14 +26,15 @@ describe('The web page', () => {
       assertDeepStrictEqual(actual, expected);
       });
 
-   it('has exactly one header, main, and footer', () => {
-      const $ = dom.window.$;
-      const actual =   {
-         header: $('body >header').length,
-         main:   $('body >main').length,
-         footer: $('body >footer').length,
-         };
-      const expected = { header: 1, main: 1, footer: 1 };
+   it('has a body with exactly one header, main, and footer -- body.children', () => {
+      const actual =   getTags(dom.window.document.body.children);
+      const expected = ['header', 'main', 'footer'];
+      assertDeepStrictEqual(actual, expected);
+      });
+
+   it('has a body with exactly one header, main, and footer -- querySelectorAll()', () => {
+      const actual =   getTags(dom.window.document.querySelectorAll('body >*'));
+      const expected = ['header', 'main', 'footer'];
       assertDeepStrictEqual(actual, expected);
       });
 
@@ -44,7 +46,7 @@ describe('The document content', () => {
    after(closeWebPage);
 
    it('has a 🚀 traveling to 🪐!', () => {
-      const html = dom.window.document.documentElement.outerHTML;
+      const html =     dom.window.document.documentElement.outerHTML;
       const actual =   { '🚀': !!html.match(/🚀/g), '🪐': !!html.match(/🪐/g) };
       const expected = { '🚀': true,                '🪐': true };
       assertDeepStrictEqual(actual, expected);

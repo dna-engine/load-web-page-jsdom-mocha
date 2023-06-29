@@ -27,16 +27,15 @@
       "unused": true,
       "node": true,
       "mocha": true,
-      "browser": true,
-      "jquery": true
+      "browser": true
    },
    "scripts": {
       "pretest": "jshint . --exclude-path .gitignore",
       "test": "mocha spec*.js --timeout 5000"
    },
    "devDependencies": {
-      "assert-deep-strict-equal": "~1.0",
-      "jsdom": "~21.0",
+      "assert-deep-strict-equal": "~1.1",
+      "jsdom": "~22.1",
       "jshint": "~2.13",
       "mocha": "~10.2",
       "server-listening": "~1.0"
