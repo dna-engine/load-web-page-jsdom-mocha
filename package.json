@@ -35,7 +35,6 @@
    },
    "devDependencies": {
       "assert-deep-strict-equal": "~1.1",
-      "jsdom": "~22.1",
       "jshint": "~2.13",
       "mocha": "~10.2",
       "server-listening": "~1.0"
