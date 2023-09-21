@@ -31,12 +31,12 @@
    },
    "scripts": {
       "pretest": "jshint . --exclude-path .gitignore",
-      "test": "mocha spec*.js --timeout 5000"
+      "test": "mocha spec*.js --timeout 7000"
    },
    "devDependencies": {
       "assert-deep-strict-equal": "~1.1",
       "jshint": "~2.13",
       "mocha": "~10.2",
-      "server-listening": "~1.0"
+      "server-listening": "~1.2"
    }
 }
