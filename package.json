@@ -37,9 +37,9 @@
       "test": "mocha spec*.js --timeout 7000"
    },
    "devDependencies": {
-      "assert-deep-strict-equal": "~1.1",
+      "assert-deep-strict-equal": "~1.2",
       "jshint": "~2.13",
-      "mocha": "~10.2",
+      "mocha": "~10.3",
       "server-listening": "~1.2"
    }
 }
