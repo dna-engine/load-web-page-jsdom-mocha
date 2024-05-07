@@ -39,7 +39,7 @@
    "devDependencies": {
       "assert-deep-strict-equal": "~1.2",
       "jshint": "~2.13",
-      "mocha": "~10.3",
+      "mocha": "~10.4",
       "server-listening": "~1.2"
    }
 }
