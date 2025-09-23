@@ -11,7 +11,7 @@ Execute `spec-runner.sh.command` or enter the terminal commands:
 $ git clone https://github.com/dna-engine/load-web-page-jsdom-mocha
 $ cd load-web-page-jsdom-mocha
 $ npm install
-$ npm test  #runs "mocha spec.js"
+$ npm test  #runs "mocha spec"
 ```
 
 For development testing, set the `url` variable in **spec.js** to your local web server, such as:

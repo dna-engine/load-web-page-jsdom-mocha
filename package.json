@@ -34,7 +34,7 @@
    },
    "scripts": {
       "pretest": "jshint . --exclude-path .gitignore",
-      "test": "mocha spec/*.spec.js --timeout 7000"
+      "test": "mocha spec --timeout 7000"
    },
    "devDependencies": {
       "assert-deep-strict-equal": "~1.2",
