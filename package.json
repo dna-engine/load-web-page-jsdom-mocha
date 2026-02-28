@@ -7,11 +7,11 @@
    "module": "spec.js",
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/dna-engine/load-web-page-jsdom-mocha.git"
+      "url": "git+https://github.com/dna-dom/load-web-page-jsdom-mocha.git"
    },
-   "homepage": "https://github.com/dna-engine/load-web-page-jsdom-mocha",
-   "bugs": "https://github.com/dna-engine/load-web-page-jsdom-mocha/issues",
-   "docs": "https://github.com/dna-engine/load-web-page-jsdom-mocha#readme",
+   "homepage": "https://github.com/dna-dom/load-web-page-jsdom-mocha",
+   "bugs": "https://github.com/dna-dom/load-web-page-jsdom-mocha/issues",
+   "docs": "https://github.com/dna-dom/load-web-page-jsdom-mocha#readme",
    "author": "Center Key (https://centerkey.com)",
    "keywords": [
       "javascript",
